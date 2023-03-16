@@ -1,5 +1,22 @@
 # Inicio do curso de Raect:desenvolvendo em React Router com JavaScript -> Alura
 
+<hr/>
+
+<img align="right" width="250px" style="margin-top:-20px" src="public/eu.png">
+
+</br>
+</br>
+
+<div dsplay="inline-block">
+ 
+ <h1 align="left">Projeto realizado por:</h1>
+ <h2 align="left">Thiago Zambelli</h2>
+ 
+  <a href="https://www.linkedin.com/in/thiagozambelli">
+    <img width="80px" src="https://i.ibb.co/RyZx12b/linkedin.png" alt="linkedin" style="vertical-align:top;">
+  </a>
+</div>
+
 <hr>
 
 ### Aula 1:
