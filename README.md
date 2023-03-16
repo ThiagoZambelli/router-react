@@ -19,6 +19,7 @@
 
 <hr>
 
+&nbsp;
 ### Aula 1:
 
 
@@ -31,6 +32,7 @@
 - Criar uma rota para um caminho que não existe.
     * Adicionando uma `Route` com o `path='*'`, podemos renderizar uma página de 404, caso a URL acessada não corresponda a nenhuma das outras rotas.
 
+&nbsp;
 ### Aula 2:
 
 - Diferenciar o comportamento de sites tradicionais e de SPAs;
@@ -42,7 +44,7 @@
 - Utilizar o componente `NavLink` do `react-router-dom`.
     - Com ele, temos acesso direto à informação do link estar ativo ou não.
 
-
+&nbsp;
 ### Aula 3:
 
 - Identificar quando utilizar rotas aninhadas;
@@ -57,7 +59,18 @@
 - Diferenciar caminhos relativos e absolutos.
     - Caminhos absolutos iniciam com /, enquanto caminhos relativos iniciam sem a /, partindo do caminho da rota pai.
 
+&nbsp;
+#### Aula 4:
+- Identificar quando utilizar rotas dinâmicas;
+    - Rotas dinâmicas são úteis quando queremos ter uma mesma estrutura de página e mudar seu conteúdo de acordo com alguma informação passada na URL. No nosso caso, passamos o id de um post pela URL, buscamos o post de acordo com o id e mostramos suas informações na tela.
+- Utilizar os seletores de rotas dinâmicas para criar uma rota dinâmica;
+    - Utilizamos a sintaxe /caminho/:nomedoparametro no atributo path de uma Route.
+- Utilizar o hook useParams.
+    - Com ele, obtemos os parâmetros passados para uma rota dinâmica.
 
+&nbsp;
+
+---
 ### Detalhes abordados:
 
 - #### SVG Como componente React:

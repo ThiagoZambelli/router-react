@@ -16,10 +16,12 @@ export default function Banner(){
                 <img
                     className={styles.circuloColorido}
                     src={circuloColorido}
+                    alt='Nao lembro'
                     aria-hidden={true}
                 />
                 <img
                     className={styles.minhaFoto}
+                    alt='Nao lembro'
                     src={minhaFoto}
                     aria-hidden={true}
                 />
