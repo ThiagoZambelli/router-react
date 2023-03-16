@@ -24,3 +24,24 @@
     - Com ele, podemos obter informações da rota que estamos atualmente.
 - Utilizar o componente `NavLink` do `react-router-dom`.
     - Com ele, temos acesso direto à informação do link estar ativo ou não.
+
+
+### Aula 3:
+
+- Identificar quando utilizar rotas aninhadas;
+    - Colocamos as páginas Inicio e SobreMim como filhas de PaginaPadrao, para que apenas elas reaproveitassem a mesma estrutura. Não queríamos que o Banner aparecesse na página 404.
+
+- Utilizar o componente Outlet;
+    - A rota que é pai de outras se responsabiliza por dizer onde elas serão renderizadas com o Outlet do react-router-dom.
+
+- Utilizar o atributo index do Route;
+    - O index indica que o caminho da rota é igual ao da rota pai.
+
+- Diferenciar caminhos relativos e absolutos.
+    - Caminhos absolutos iniciam com /, enquanto caminhos relativos iniciam sem a /, partindo do caminho da rota pai.
+
+
+### Detalhes abordados:
+
+- #### SVG Como componente React:
+    > A sintaxe `import { ReactComponent as NomeDoComponente } from 'caminho_do_componente';` é possível devido ao pacote `SVGR`, que já vem por padrão em um projeto `React`. Esse pacote permite que utilizemos um `SVG` como um componente `React`, assim não precisamos utilizá-lo como uma tag img.
