@@ -70,8 +70,58 @@
 
 &nbsp;
 
+### Aula 5:
+- Componentizar um botão;
+    - Criamos o componente BotaoPrincipal, que recebe props que definem seus estilos.
+
+- Utilizar o hook useNavigate;
+    - Podemos utilizá-lo para fazer navegações mais complexas, como voltar para a página anterior no navegador.
+
+- Tratar o caso de post não encontrado;
+    - Utilizamos o componente NaoEncontrada para quando um post não era encontrado. Vimos duas possíveis soluções para reutilizar o componente PaginaPadrao apenas quando um post era encontrado. Uma delas é aproveitando o Outlet e adicionando os componentes Routes e Route dentro do componente Post; outra é adicionando {children} em PaginaPadrao e permitindo ele possa ser utilizado como um componente pai direto.
+
+&nbsp;
+
 ---
-### Detalhes abordados:
+
+&nbsp;
+
+## Detalhes abordados:
+
+&nbsp;
 
 - #### SVG Como componente React:
     > A sintaxe `import { ReactComponent as NomeDoComponente } from 'caminho_do_componente';` é possível devido ao pacote `SVGR`, que já vem por padrão em um projeto `React`. Esse pacote permite que utilizemos um `SVG` como um componente `React`, assim não precisamos utilizá-lo como uma tag img.
+
+&nbsp;
+
+- #### ScrollToTop :
+
+    > Componente que avalia se houve mudança de rota e redireciona para o topo da pagina da aplicação caso sim
+
+    ~~~ javascript
+    import { useEffect } from "react";
+    import { useLocation } from "react-router-dom";
+
+    export default function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+    }
+    ~~~
+
+- #### Filtro das postagens recomendadas:
+
+    ~~~ javascript
+    const postsRecomendados = posts
+            // filtrando pelo id da atual para que ela n apareça nas recomendadas
+            .filter((post) => post.id !== Number(parametros.id))
+            // Invertendo a ordem do maior para o menor
+            .sort((a,b) => b.id - a.id)
+            // Pegando os 4 primeiros da lista restante
+            .slice(0,4);
+    ~~~
